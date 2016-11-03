@@ -10,6 +10,7 @@ export class RouterConfiguration {
   options: any = {};
   pipelineSteps: Array<Function|PipelineStep> = [];
   title: string;
+  titleSeparator: string;
   unknownRouteConfig: any;
 
   /**
@@ -139,6 +140,10 @@ export class RouterConfiguration {
 
     if (this.title) {
       router.title = this.title;
+    }
+    
+    if (this.titleSeparator) {
+      router.titleSeparator = this.titleSeparator;
     }
 
     if (this.unknownRouteConfig) {

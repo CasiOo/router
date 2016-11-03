@@ -14,6 +14,11 @@ export class NavModel {
   title: string = null;
 
   /**
+  * Separator used between child routes.
+  */
+  titleSeparator: string = null;
+  
+  /**
   * This nav item's absolute href.
   */
   href: string = null;

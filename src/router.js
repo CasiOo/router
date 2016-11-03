@@ -211,6 +211,7 @@ export class Router {
   createNavModel(config: RouteConfig): NavModel {
     let navModel = new NavModel(this, 'href' in config ? config.href : config.route);
     navModel.title = config.title;
+    navModel.titleSeparator = config.titleSeparator;
     navModel.order = config.nav;
     navModel.href = config.href;
     navModel.settings = config.settings;
